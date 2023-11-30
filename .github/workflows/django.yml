@@ -43,4 +43,4 @@ jobs:
     - name: Run tests
       run: |
         cd decide
-        ./manage.py test 
+        coverage run --branch --source=. ./manage.py test  --keepdb 
